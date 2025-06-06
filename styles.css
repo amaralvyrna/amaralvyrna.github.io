@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 50%, #fef2f2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1.5rem 0;
+}
+
+.header h1 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    color: #16a34a;
+}
+
+.icon-heart {
+    color: #ef4444;
+}
+
+/* Main */
+.main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-image {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #bbf7d0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #6b7280;
+}
+
+/* Description Section */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #374151;
+}
+
+.description p {
+    margin-bottom: 1rem;
+}
+
+.highlight-box {
+    background: #f0fdf4;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-left: 4px solid #22c55e;
+    margin-top: 1.5rem;
+}
+
+.highlight-title {
+    font-weight: 600;
+    color: #166534;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-list {
+    color: #15803d;
+    list-style: none;
+}
+
+.highlight-list li {
+    margin-bottom: 0.25rem;
+}
+
+/* PIX Section */
+.pix-card {
+    background: linear-gradient(to right, #22c55e, #ef4444);
+    color: white;
+}
+
+.pix-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.pix-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    color: #1f2937;
+}
+
+.qr-instruction {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.qr-code img {
+    border: 2px solid #e5e7eb;
+    border-radius: 0.5rem;
+}
+
+.pix-key {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+.pix-key-value {
+    font-family: 'Courier New', monospace;
+    background: #f3f4f6;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.pix-message {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+}
+
+/* Thanks Section */
+.thanks-card {
+    background: #fefce8;
+    border: 1px solid #fde047;
+}
+
+.thanks-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #a16207;
+    margin-bottom: 0.75rem;
+}
+
+.thanks-message {
+    color: #a16207;
+}
+
+/* Footer */
+.footer {
+    background: #1f2937;
+    color: white;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+}
+
+.footer p {
+    text-align: center;
+    color: #d1d5db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .pix-title {
+        font-size: 1.5rem;
+    }
+    
+    .main {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .card-content {
+        padding: 1.5rem;
+    }
+    
+    .profile-image {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .header h1 {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .pix-content {
+        padding: 1rem;
+    }
+}
