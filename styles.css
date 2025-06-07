@@ -187,10 +187,12 @@ body {
 }
 
 .qr-code img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: contain; 
     border: 2px solid #e5e7eb;
     border-radius: 0.5rem;
 }
-
 .pix-key {
     color: #6b7280;
     font-size: 0.875rem;
@@ -267,7 +269,12 @@ body {
         height: 6rem;
     }
 }
-
+@media (max-width: 768px) {
+    .qr-code img {
+        width: 150px;
+        height: 150px;
+    }
+}
 @media (max-width: 480px) {
     .header-content {
         flex-direction: column;
