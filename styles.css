@@ -200,10 +200,13 @@ body {
 
 .pix-key-value {
     font-family: 'Courier New', monospace;
-    background: #f3f4f6;
+    background: #f3f4f6; /* Cor de fundo cinza claro (opcional) */
+    color: #000000;      /* Texto PRETO */
     padding: 0.5rem;
     border-radius: 0.25rem;
     margin-top: 0.5rem;
+    font-weight: bold;   /* Deixa o texto em negrito */
+    border: 1px solid #000000; /* Borda preta (opcional) */
 }
 
 .pix-message {
