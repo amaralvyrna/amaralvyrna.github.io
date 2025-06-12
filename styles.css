@@ -157,14 +157,13 @@ body {
 
 /* Barra de Progresso */
 .progress_bar {
-    position: fixed;
-
     display: flex;
     align-itens: center;
+    align-content: center;
     justify-content: center;
     
     width: 800px;
-    height: 200px;
+    height: 50px;
 
     background-color: red;
 }
@@ -172,6 +171,8 @@ body {
 .progress_bar_content {
     width: 70%;
     height: 70%;
+
+    align-text: center;
     
     background-color: yellow;
 }
