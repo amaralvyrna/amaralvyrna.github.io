@@ -155,19 +155,23 @@ body {
     margin-bottom: 0.25rem;
 }
 
-/* Barra de Progressp */
+/* Barra de Progresso */
 .progress_bar {
-    position: absolute;
+    position: fixed;
+
+    display: flex;
+    align-itens: center;
+    justify-content: center;
     
     width: 800px;
-    heigth: 200px;
+    height: 200px;
 
     background-color: red;
 }
 
 .progress_bar_content {
     width: 70%;
-    heigth: 70%;
+    height: 70%;
     
     background-color: yellow;
 }
