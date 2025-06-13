@@ -155,11 +155,11 @@ body {
     margin-bottom: 0.25rem;
 }
 
-/* Progress Card Styles */
-.progress-card {
-    margin-top: 1.5rem;
-    background: #f8fafc !important;
-    border-left: 4px solid #22c55e;
+/* Progress Bar Styles */
+.progress-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
 .progress-title {
@@ -167,26 +167,24 @@ body {
     color: #166534;
     margin-bottom: 1rem;
     text-align: center;
-}
-
-.progress-container {
-    max-width: 500px;
-    margin: 0 auto;
+    font-weight: 600;
 }
 
 .progress-bar {
-    height: 1.25rem;
+    height: 20px;
     background-color: #e5e7eb;
-    border-radius: 0.75rem;
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 0.75rem;
+    width: 100%;
 }
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #22c55e, #16a34a);
-    border-radius: 0.75rem;
+    background: linear-gradient(90deg, #16a34a, #22c55e);
+    border-radius: 10px;
     transition: width 0.5s ease;
+    width: 30%; /* This will be overridden by inline style */
 }
 
 .progress-text {
@@ -194,6 +192,7 @@ body {
     font-size: 1rem;
     color: #374151;
     font-weight: 500;
+    margin-top: 0.5rem;
 }
 
 /* PIX Section */
@@ -332,5 +331,20 @@ body {
     
     .pix-content {
         padding: 1rem;
+    }
+}
+@media (max-width: 480px) {
+    .progress-container {
+        padding: 1.25rem;
+    }
+    .progress-title {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    .progress-bar {
+        height: 18px;
+    }
+    .progress-text {
+        font-size: 0.95rem;
     }
 }
