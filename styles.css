@@ -155,26 +155,45 @@ body {
     margin-bottom: 0.25rem;
 }
 
-/* Barra de Progresso */
-.progress_bar {
-    display: flex;
-    align-itens: center;
-    align-content: center;
-    justify-content: center;
-    
-    width: 800px;
-    height: 50px;
-
-    background-color: red;
+/* Progress Card Styles */
+.progress-card {
+    margin-top: 1.5rem;
+    background: #f8fafc !important;
+    border-left: 4px solid #22c55e;
 }
 
-.progress_bar_content {
-    width: 70%;
-    height: 70%;
+.progress-title {
+    font-size: 1.25rem;
+    color: #166534;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
-    align-text: center;
-    
-    background-color: yellow;
+.progress-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.progress-bar {
+    height: 1.25rem;
+    background-color: #e5e7eb;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-bottom: 0.75rem;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #22c55e, #16a34a);
+    border-radius: 0.75rem;
+    transition: width 0.5s ease;
+}
+
+.progress-text {
+    text-align: center;
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 500;
 }
 
 /* PIX Section */
